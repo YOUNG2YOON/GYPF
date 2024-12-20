@@ -106,6 +106,7 @@ transform: translateX(600px);
 }
 
 .main-img-wrapper {
+  width: 1000px;
   border-radius: 20px;
   margin: 0 auto;
   margin-bottom: 150px;
