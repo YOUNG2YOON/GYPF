@@ -1,0 +1,370 @@
+@charset "utf-8";
+
+body {
+  font-family: var(--font-main-ko2);
+}
+
+
+.sub-project {
+  position: fixed;
+  z-index: 999;
+  width: 400px; height: 100%;
+  background-color: var(--color-white);
+  border-right: var(--color-red);
+}
+.sub-project-wrapper {
+  padding-left: var(--padding-sm);
+}
+.sub-project .sub-project-wrapper .sub-project-title {
+  font-family: var(--font-main-en);
+  font-size: var(--font-main-title-lg);
+  margin-top: 100px;
+  margin-bottom: 30px;
+  color: var(--color-red);
+  font-weight: bold;
+  letter-spacing: var(--spacing-lg);
+  position: relative;
+} 
+.sub-project-img {
+z-index: -1;
+width: 70%;
+transform: translateX(600px);
+} 
+
+.sub-project .sub-project-dec {
+  font-family: var(--font-main-ko);
+  font-size: var(--font-sub-title-xsm);
+  color: var(--color-red);
+  letter-spacing: var(--spacing-sm);
+  text-transform: capitalize;
+  line-height: 25px;
+} 
+.sub-project .home-btn {
+  position: absolute;
+  bottom: 10%;
+}
+.sub-project .home-btn .home-icon {
+  background-color: var(--color-red);
+  display: block;
+  width: 73px; height: 73px;
+  text-align: center;
+  border-radius: var(--border-radius-lg);
+  text-indent: -9999px;
+  background-image: url(../project3/project3img/indexImg/home_icon.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 50%;
+} 
+
+.sub-project .home-btn .home-text {
+  font-family: var(--font-main-ko);
+  font-size: var(--font-main-title-md);
+  background-color: var(--color-red);
+  display: block;
+  width: 203px; height: 73px;
+  text-align: center;
+  line-height: 73px;
+  border-radius: var(--border-radius-lg);
+  color: var(--color-white);
+}
+
+
+
+
+
+.project4-wrapper {
+  position: absolute;
+  left: 400px;
+  width: calc(100%-400px);
+  background-color: #ffffff;
+  color: var(--color-red);
+  font-weight: 0;
+  padding: 100px 0px 0px 150px;
+  
+}
+
+
+.project4-wrapper .main-btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: fixed;
+  top: 50px;
+  right: 100px;
+}
+
+.site-btn {
+  font-size: 18px;
+  padding: 10px 50px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  border-radius: 40px;
+  border: 1px var(--color-red) solid;
+  background-color: var(--color-red);
+  transition: 0.3s;
+}
+
+.main-img-wrapper {
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  border: 5px solid #121212;
+  box-shadow: rgba(149, 157, 165, 0.253) 0px 8px 24px;
+}
+
+.mainImg {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+}
+
+
+.project4-wrapper .main-btn .site-btn.active {
+  backdrop-filter: blur(5px);
+  background-color: transparent;
+  color: var(--color-red);
+  transition: 0.3s; 
+}
+.project4-wrapper .main-btn .site-btn.active:hover {
+  color: #fff;
+  transition: 0.3s;
+  background-color: var(--color-red);
+}
+
+.project4-wrapper .situation,
+.project4-wrapper .task,
+.project4-wrapper .problem,
+.project4-wrapper .styleGuide,
+.project4-wrapper .issueResolving,
+.project4-wrapper .timeline,
+.project4-wrapper .review
+ {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.project4-wrapper .situation h2,
+.project4-wrapper .problem h2,
+.project4-wrapper .task h2,
+.project4-wrapper .styleGuide h2,
+.project4-wrapper .timeline h2,
+.project4-wrapper .issueResolving h2,
+.project4-wrapper .review h2 {
+  width: 350px;
+  padding: 15px 50px;
+  border-right: 1px var(--color-red) solid;
+}
+.project4-wrapper .situation .situation-wrapper,
+.project4-wrapper .problem .problem-wrapper,
+.project4-wrapper .task .task-wrapper,
+.project4-wrapper .styleGuide .styleGuide-wrapper,
+.project4-wrapper .timeline .timeline-wrapper,
+.project4-wrapper .issueResolving .issueResolving-wrapper,
+.project4-wrapper .review .review-wrapper {
+  width: 40vw;
+  padding-left: 100px;
+}
+
+.project4-wrapper .problem .problem-wrapper li:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.project4-wrapper .styleGuide .styleGuide-wrapper .keyword .keyword-wrapper,
+.project4-wrapper .styleGuide .styleGuide-wrapper .color .color-wrapper,
+.project4-wrapper .styleGuide .styleGuide-wrapper .font .font-wrapper{
+  display: flex;
+  gap: 20px;
+}
+.project4-wrapper .styleGuide .styleGuide-wrapper .keyword,
+.project4-wrapper .styleGuide .styleGuide-wrapper .color,
+.project4-wrapper .styleGuide .styleGuide-wrapper .font {
+padding: 30px;
+}
+
+
+.project4-wrapper .styleGuide .styleGuide-wrapper .keyword h3,
+.project4-wrapper .styleGuide .styleGuide-wrapper .color h3,
+.project4-wrapper .styleGuide .styleGuide-wrapper .font h3 {
+  margin-bottom: 15px;
+}
+.project4-wrapper .styleGuide .styleGuide-wrapper .keyword .keyword-wrapper li {
+  width: 120px; height: 40px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 100px;
+  border: var(--color-red) 1px solid;
+}
+.project4-wrapper .styleGuide .styleGuide-wrapper .color .color-wrapper li {
+  width: 120px; height: 40px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 100px;
+}
+.project4-wrapper .styleGuide .styleGuide-wrapper .color .color-wrapper li:nth-child(1) {
+  background-color: #000;
+  color: #fff;
+}
+.project4-wrapper .styleGuide .styleGuide-wrapper .color .color-wrapper li:nth-child(2) {
+  background-color: #fff;
+  color: #000;
+  border: 1px #000 solid;
+}
+.project4-wrapper .styleGuide .styleGuide-wrapper .color .color-wrapper li:nth-child(3) {
+  background-color: #00D344;
+  color: #fff;
+
+}
+.project4-wrapper .styleGuide .styleGuide-wrapper .color .color-wrapper li:nth-child(4) {
+  background-color: #e635a2;
+  color: #fff;
+}
+
+.project4-wrapper .styleGuide .styleGuide-wrapper .font .font-wrapper li {
+  width: 250px; height: 60px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 100px;
+  border: var(--color-red) 1px solid;
+}
+.project4-wrapper .styleGuide .styleGuide-wrapper .font .font-wrapper li:nth-child(1) {
+  font-weight: normal;
+}
+.project4-wrapper .styleGuide .styleGuide-wrapper .font .font-wrapper li:nth-child(2) {
+  font-weight: normal;
+}
+
+.project4-wrapper .issueResolving .issueResolving-wrapper .issueResolving-wrapper1 li:nth-child(1),
+.project4-wrapper .issueResolving .issueResolving-wrapper .issueResolving-wrapper2 li:nth-child(1) {
+  padding-bottom: 0;
+  line-height: 30px;
+  }
+
+.project4-wrapper .issueResolving .issueResolving-wrapper .issueResolving-wrapper1 li:nth-child(2),
+.project4-wrapper .issueResolving .issueResolving-wrapper .issueResolving-wrapper2 li:nth-child(2) {
+ padding: 5px 0 10px 5px;
+}
+
+.project4-wrapper .issueResolving .issueResolving-wrapper .issueResolving-wrapper1 li strong,
+.project4-wrapper .issueResolving .issueResolving-wrapper .issueResolving-wrapper2 li strong {
+  font-weight: 600;
+}
+
+.project4-wrapper .issueResolving .issueResolving-wrapper .issueResolving-wrapper1 li span,
+.project4-wrapper .issueResolving .issueResolving-wrapper .issueResolving-wrapper2 li span {
+  text-decoration: underline;
+  font-weight: 500;
+}
+.project4-wrapper .issueResolving .issueResolving-wrapper .issueResolving-wrapper1 .timeline-list-lg,
+.project4-wrapper .issueResolving .issueResolving-wrapper .issueResolving-wrapper2 .timeline-list-lg {
+  font-size: var(--size-20px);
+  padding-top: 15px;
+}
+.project4-wrapper .issueResolving .issueResolving-wrapper .issueResolving-wrapper1 li:nth-child(3) {
+  padding-bottom: 15px;
+}
+.project4-wrapper .issueResolving .issueResolving-wrapper #ex-btn {
+  padding: 5px 10px;
+  text-align: center;
+  width: 150px;
+  margin: 10px 10px;
+}
+.project4-wrapper .issueResolving .issueResolving-wrapper #ex-btn2 {
+  padding: 5px 10px;
+  text-align: center;
+  width: 150px;
+  margin: 10px 10px;
+}
+
+.project4-wrapper .review .review-wrapper .regret-box {padding: 15px 0 50px 0;}
+.project4-wrapper .review .review-wrapper .success-box {padding: 15px 0 50px 0;}
+.project4-wrapper .review .review-wrapper .learned-box {padding: 15px 0 50px 0;}
+
+.review h3 {
+  padding: 0 0 20px 0;
+}
+
+.review .last-p { 
+  padding-bottom: 10px;
+  line-height: 30px;
+  background-color: #fe6d0c17;
+  padding: 15px 30px;
+  margin-bottom: 15px;
+}
+
+.issueResolving-wrapper1 {
+  margin-bottom: 50px;
+}
+
+
+
+
+
+/* 예시 사진 모달창 */
+
+
+#modalWrap {
+  position: fixed; /* 화면에 고정 */
+  z-index: 999; /* 상위에 위치 */
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* 반투명한 배경색 */
+  display: none; /* 초기에는 숨김 */
+}
+
+#modalBody {
+  width: 900px;
+  height: 600px;
+  padding: 30px 30px;
+  margin: 0 auto;
+  border: 1px solid #777;
+  background-color: #fff;
+}
+
+#closeBtn {
+  float: right;
+  font-weight: bold;
+  color: var(--color-red);
+  font-size: 50px;
+  cursor: pointer;
+}
+
+
+
+
+#modalWrap2 {
+  position: fixed; /* 화면에 고정 */
+  z-index: 999; /* 상위에 위치 */
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7); /* 반투명한 배경색 */
+  display: none; /* 초기에는 숨김 */
+}
+
+#modalBody2 {
+  width: 900px;
+  height: 600px;
+  padding: 30px 30px;
+  margin: 0 auto;
+  border: 1px solid #777;
+  background-color: #fff;
+}
+
+#closeBtn2 {
+  float: right;
+  font-weight: bold;
+  color: var(--color-red);
+  font-size: 50px;
+  cursor: pointer;
+}

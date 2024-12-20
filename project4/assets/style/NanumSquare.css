@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'NanumSquareB';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/NanumSquareB.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'NanumSquareR';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/NanumSquareR.woff2') format('woff2');
+}

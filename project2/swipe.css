@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* main .mySwiper1,
+.new .mySwiper2,
+.content2 .part1 .mySwiper3,
+.content2 .part2 .mySwiper3 {
+  z-index: -1;
+} */
+
+main .mySwiper1 .swiper-button-next, main .mySwiper1 .swiper-button-prev {
+  color: #fff;
+  width: 20px;
+  height: 60px;
+}
+main .mySwiper1 {
+  position: relative;
+}
+main .mySwiper1 .swiper-pagination-fraction
+ {
+  position: absolute;
+  top: 400px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 10px;
+}
+
+main .mySwiper1 .swiper-button-next:after,
+main .mySwiper1 .swiper-button-prev:after {
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 20px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.new .mySwiper2 .swiper-button-next, .new .mySwiper2 .swiper-button-prev {
+  color: #fff;
+  width: 20px;
+  height: 60px;
+}
+
+.new .mySwiper2 .swiper-button-next:after, .new .mySwiper2 .swiper-button-prev:after {
+  font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 20px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+
+

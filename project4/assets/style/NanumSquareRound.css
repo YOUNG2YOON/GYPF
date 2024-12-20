@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'NanumSquareRoundEB';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/NanumSquareRoundEB.woff2') format('woff2');
+}

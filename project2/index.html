@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta property="og:title" content="PORTER"/>
+  <meta property="og:url" content="https://dahhnym.github.io/checo/" />
+  <meta property="og:image" content="./opengraph_image.png" />
+  <meta property="og:image:alt" content="Porter openGraph_image" />
+  <meta property="og:description"
+    content="PORTER 공식 온라인 스토어" />
+  <title>PORTER</title>
+  <link rel="stylesheet" href="../assets/style/reset.css">
+  <link rel="stylesheet" href="./assets/style/global.css">
+  <link rel="stylesheet" href="../assets/style/common.css">
+  <link rel="stylesheet" href="../assets/style/Pretendard.css">
+  <link rel="stylesheet" href="./swipe.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+
+
+
+  <script src="../assets/scripts/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./index.js" defer></script>
+
+
+</head>
+
+<body>
+
+
+  <header class="transit">
+    <h1 class="mobile-logo">
+      <a href="#"><img src="./project2img/porter-logo.svg" alt="logo" class="transit logo"></a>
+    </h1>
+
+    <nav class="menu-wrapper">
+
+      <ul class="global-menu transit flex-wrapper">
+        <li><a href="#" class="pc-hover">PRODUCT</a></li>
+        <li><a href="#">COLLABORATION</a></li>
+        <li><a href="#">JOURNAL</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">STORE</a></li>
+      </ul>
+    </nav>
+
+    <ul class="mobile-user transit flex-wrapper">
+      <li><a href="#">CART</a></li>
+      <li><a href="#"><img src="./project2img/search_icon.svg" alt="search_icon"></a></li>
+      <li class="mobile-menu-btn"><a href="#" id="toggle"><span class="icon"></span></a></li>
+    </ul>
+
+
+    <ul class="pc-user transit flex-wrapper">
+      <li><a href="#">CART</a></li>
+      <li><a href="#">LOGIN</a></li>
+      <li><a href="#">JOIN</a></li>
+      <li><a href="#"><img src="./project2img/search_icon.svg" alt="search_icon"></a></li>
+    </ul>
+
+    <ul class="pc-menu-wrapper">
+      <li><a href="#" class="menu-tit">All Items</a></li>
+
+      <li><a href="#" class="menu-tit">New Items</a></li>
+
+      <li>
+        <a href="#" class="menu-tit">BRAND</a>
+        <ul>
+          <li class="menu-des"><a href="#">PORTER</a></li>
+          <li class="menu-des"><a href="#">POTR</a></li>
+          <li class="menu-des"><a href="#">LUGGAGE LABEL</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="menu-tit">Duffle bag</a>
+        <ul>
+          <li class="menu-des"><a href="#">Duffle bag</a></li>
+          <li class="menu-des"><a href="#">Garment bags</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="menu-tit">Briefcase</a>
+        <ul>
+          <li class="menu-des"><a href="#">Briefcase</a></li>
+          <li class="menu-des"><a href="#">Overnight Briefcase</a></li>
+          <li class="menu-des"><a href="#">3way Briefcase</a></li>
+          <li class="menu-des"><a href="#">Laptop Case</a></li>
+          <li class="menu-des"><a href="#">Document Cases</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="menu-tit">Backpack</a>
+        <ul>
+          <li class="menu-des"><a href="#">Backpack</a></li>
+          <li class="menu-des"><a href="#">Daypack</a></li>
+          <li class="menu-des"><a href="#">Bonsac</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" class="menu-tit">Tote bag</a></li>
+
+      <li><a href="#" class="menu-tit">Helmet bag</a></li>
+
+      <li>
+        <a href="#" class="menu-tit">Shoulder bag</a>
+        <ul>
+          <li class="menu-des"><a href="#">Shoulder bag</a></li>
+          <li class="menu-des"><a href="#">Messenger bag</a></li>
+          <li class="menu-des"><a href="#">Sling Shoulder bag</a></li>
+          <li class="menu-des"><a href="#">Sacoche</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="#" class="menu-tit">Waist bag</a>
+        <ul>
+          <li class="menu-des"><a href="#">Waist bag</a></li>
+          <li class="menu-des"><a href="#">Hip bag</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" class="menu-tit">Clutch bag</a></li>
+
+      <li>
+        <a href="#" class="menu-tit">Hand bag</a>
+        <ul>
+          <li class="menu-des"><a href="#">Hand bag</a></li>
+          <li class="menu-des"><a href="#">Drawstring bag</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" class="menu-tit">Pouch</a></li>
+
+      <li>
+        <a href="#" class="menu-tit">Purse</a>
+        <ul>
+          <li class="menu-des"><a href="#">Long Wallet</a></li>
+          <li class="menu-des"><a href="#">Wallet</a></li>
+          <li class="menu-des"><a href="#">Money Clip</a></li>
+          <li class="menu-des"><a href="#">Coin</a></li>
+        </ul>
+      </li>
+    </ul>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <ul class="slide-section">
+            <li class="section1">
+              <img src="./project2img/main_slide1.jpg" alt="">
+            </li>
+            <li class="section2">
+              <p class="main-slide-title">아무것도 변하지 않고 모든 것이 바뀐다<br>
+                NEW TANKER</p>
+              <p class="des">1983년에 탄생한 TANKER 시리즈. 새로운 TANKER는 100% 식물성 나일론으로 새롭게 태어납니다. 미래를 내다보는 새로운 도전입니다.</p>
+              <a href="#" class="btn">ALL NEW TANKER 제품 보기 -></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="swiper-slide">
+          <ul class="slide-section">
+            <li class="section1">
+              <img src="./project2img/main_slide2.jpg" alt="">
+            </li>
+
+            <li class="section2">
+              <p class="main-slide-title">OLD NEW,<br>
+                Wen old wisdom new</p>
+              <p class="des">기원전 4세기 경부터 전해 내려오는 가장 오래된 천연 염료 중 하나인 ‘감’을
+                사용한 시리즈. 자연에서 탄생한 그대로 자연으로 돌아가는 감물 염색, 오늘날 꼭 필요한 새로운 순환의 형태입니다.</p>
+              <a href="#" class="btn main-slide-btn">OLD NEW 제품 보기 -></a>
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="swiper-slide">
+          <ul class="slide-section">
+            <li class="section1">
+              <img src="./project2img/main_slide3.png" alt="">
+            </li>
+
+            <li class="section2">
+              <p class="main-slide-title">사람과 삶을 잇는 하나의 스티치<br>
+                PCTR</p>
+              <p class="des">One Stich for Life. POTR은 하나의 스티치로 사람과 삶을 이어가며 라이프스타일에 어울리는 가방을 제안합니다.</p>
+              <a href="#" class="btn main-slide-btn">PCTR 제품 보기 -></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="swiper-slide">
+          <ul class="slide-section transit">
+            <li class="section1">
+              <img src="./project2img/main_slide4.png" alt="">
+            </li>
+
+            <li class="section2">
+              <p class="main-slide-title">견고한 소재와 간결한 디자인<br>
+                HEAT</p>
+              <p class="des">2001년 A/W 시리즈 출시 이후 당시의 라이프스타일에 맞는 아이템을 추가하여 비즈니스 백부터 소품까지 폭넓은 계층이 사용할 수 있는 풍부한 라인업을 갖추고
+                있습니다.
+              </p>
+              <a href="#" class="btn main-slide-btn">HEAT 제품 보기 -></a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
+
+  <section class="new">
+    <ul class="slide-section">
+      <li class="section1">
+        <article class="text" data-aos="fade-up"
+        data-aos-duration="1000">
+          <h2 class="title">NEW</h2>
+          <p class="des">요시다 포터의 새로운 콜라보 및 신제품을 만나보세요.</p>
+        </article>
+        <a href="#" class="btn new-btn" data-aos="fade-up"
+        data-aos-duration="1000">신상품 보기 -></a>
+      </li>
+      <li class="section2" data-aos="fade-up"
+      data-aos-duration="1000">
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./project2img/product/1.jpg" alt="slide1"></div>
+            <div class="swiper-slide"><img src="./project2img/product/2.jpg" alt="slide2"></div>
+            <div class="swiper-slide"><img src="./project2img/product/3.jpg" alt="slide3"></div>
+            <div class="swiper-slide"><img src="./project2img/product/4.jpg" alt="slide4"></div>
+            <div class="swiper-slide"><img src="./project2img/product/5.jpg" alt="slide5"></div>
+            <div class="swiper-slide"><img src="./project2img/product/6.jpg" alt="slide6"></div>
+            <div class="swiper-slide"><img src="./project2img/product/7.jpg" alt="slide7"></div>
+            <div class="swiper-slide"><img src="./project2img/product/8.jpg" alt="slide8"></div>
+            <div class="swiper-slide"><img src="./project2img/product/9.jpg" alt="slide9"></div>
+            <div class="swiper-slide"><img src="./project2img/product/10.jpg" alt="slide10"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="content1">
+    <ul class="slide-section">
+      <li class="section1">
+        <article class="text" data-aos="fade-up"
+        data-aos-duration="1000">
+          <h2 class="title">탄생 20주년,<br>
+            요시다 포터의 대표 시리즈 SMOKY</h2>
+          <p class="des">PORTER를 대표하는 스테디셀러 시리즈 「SMOKY」.<br>
+            지난 해 탄생 20주년을 맞이 하여 기존 디자인의 업그레이드는 물론 트랜드에 맞는 새로운 디자인이 추가 되었습니다.
+            <br>
+            온오프라인 스토어에서 만나보세요.
+          </p>
+        </article>
+          <a href="#" class="btn new-btn" data-aos="fade-up"
+          data-aos-duration="1000">신상품 보기 -></a>
+        
+      </li>
+
+      <li class="section2" data-aos="fade-up"
+      data-aos-duration="1000">
+        <div class="content1-photo">
+          <img src="./project2img/content1-img1.jpg" alt="smoky1">
+          <img src="./project2img/content1-img2.jpg" alt="smoky2">
+        </div>
+
+      </li>
+    </ul>
+  </section>
+
+  <section class="content2">
+    <h2 class="title" data-aos="fade-up"
+    data-aos-duration="1000">미래를 내다보는 요시다 포터의 새로운 도전</h2>
+    <ul class="slide-section content2-slide1">
+      <li class="section1" data-aos="fade-up"
+      data-aos-duration="1000">
+        <article class="text">
+          <h3 class="sub-title">ALL NEW TANKER</h3>
+          <p class="des">100% 식물원료의 나일론. 변하지 않는 질감과 외관은 그대로 유지하면서 강하고 유연한 나일론으로 재탄생했습니다.</p>
+        </article>
+        <a href="#" class="btn" data-aos="fade-up"
+        data-aos-duration="1000">자세히 보기 -></a>
+      </li>
+      
+      <li class="section2" data-aos="fade-up"
+      data-aos-duration="1000">
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./project2img/content2-img1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./project2img/content2-img2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./project2img/content2-img3.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="slide-section content2-slide2">
+      <li class="section1" data-aos="fade-up"
+      data-aos-duration="1000">
+        <article class="text">
+          <h3 class="sub-title">OLD NEW</h3>
+          <p class="des">전통적인 방식인 ‘감물(柿渋) 염색’. 아주 오래된 기술을 찾아, 새로운 가치를 알기 위한 시도입니다.</p>
+        </article>
+        <a href="#" class="btn" data-aos="fade-up"
+        data-aos-duration="1000">자세히 보기 -></a>
+      </li>
+
+      <li class="section2" data-aos="fade-up"
+      data-aos-duration="1000">
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./project2img/content2-img4.png" alt=""></div>
+            <div class="swiper-slide"><img src="./project2img/content2-img5.png" alt=""></div>
+            <div class="swiper-slide"><img src="./project2img/content2-img6.png" alt=""></div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="instagram">
+    <div class="insta-profile" data-aos="fade-up"
+    data-aos-duration="1000">
+      <img src="./project2img/poter_insta.jpg" alt="insta-profile" class="insta-img">
+      <h4>@poter_kr</h4>
+      <p class="des">요시다 포터 인스타그램을 구독하고 새로운 소식을 빠르게 접하세요.</p>
+      <a href="https://www.instagram.com/porter_kr/" class="move">바로가기</a>
+    </div>
+    <ul class="insta-grid" data-aos="fade-up"
+    data-aos-duration="1000">
+      <li><a href="https://www.instagram.com/p/DCYN3qcvYvR/?igsh=ZmFkdzFhNm1zZ2pk"><img src="./project2img/insta1.jpg"
+            alt=""></a></li>
+      <li><a href="https://www.instagram.com/p/DCYFWfSPNU4/?igsh=MWZxazRvNDhiamNxbQ=="><img
+            src="./project2img/insta2.jpg" alt=""></a></li>
+      <li><a href="https://www.instagram.com/p/DCYFVgBPHGm/?igsh=MXVjcDhtcGJhb2F5MQ=="><img
+            src="./project2img/insta3.jpg" alt=""></a></li>
+      <li><a href="https://www.instagram.com/p/DCYFUVhPWDa/?igsh=b3Fsdmp6N3FmeHo0"><img src="./project2img/insta4.jpg"
+            alt=""></a></li>
+      <li><a href="https://www.instagram.com/p/DCWFhUGPhqA/?igsh=dXYyc3kyMHkyYXlx"><img src="./project2img/insta5.jpg"
+            alt=""></a></li>
+      <li><a href="https://www.instagram.com/p/DCWFgAHPQOp/?igsh=MWY4dnpobjZuZng2Yg=="><img
+            src="./project2img/insta6.jpg" alt=""></a></li>
+      <li><a href="https://www.instagram.com/p/DCWFgAHPQOp/?igsh=MWY4dnpobjZuZng2Yg=="><img
+            src="./project2img/insta7.jpg" alt=""></a></li>
+      <li><a href="https://www.instagram.com/reel/DCTz9PcPYoH/?igsh=MTZvdzRtcXFqYzMzOA=="><img
+            src="./project2img/insta8.jpg" alt=""></a></li>
+      <li><a href="https://www.instagram.com/reel/DCTXNtKvmeK/?igsh=MW12dnVsaWI1NXJ5Mg=="><img
+            src="./project2img/insta9.jpg" alt=""></a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <div class="about">
+      <img src="./project2img/porter-logo.svg" alt="" data-aos="fade-up"
+      data-aos-duration="1000">
+      <p class="about-des" data-aos="fade-up"
+      data-aos-duration="1000">포터(PORTER)는 1935년 가방 장인인 요시다 기치조가 설립한 요시다 컴퍼니에서 1962년 발표한 자체 브랜드로“바늘 한 땀 한 땀에 영혼을 담는다”라는
+        ‘일침입혼(一針入魂)’의 장인 정신을
+        바탕으로 하고 있습니다.
+        현대적인 디자인에 뛰어난 기술력과 기능성, 사용하면 할수록 감탄을 더하게 하는 내구성과 실용성을 모두 겸비한 가방 브랜드로 잘 알려져 있습니다.
+        여러 브랜드와의 컬래버레이션을 통해서 다채로운 행보를 이어가고 있으며 무엇보다도 물건을 운반하는 도구라는 가방의 기본적인 본질을 우선으로 하여
+        모든 제작 과정에 숙련된 장인들의 눈과 손을 거쳐 탄생합니다.</p>
+    </div>
+
+    <div class="site-map">
+
+      <article class="site-map-box">
+        <p class="site-tit">소개</p>
+        <ul class="site-map-li">
+          <li><a href="#">브랜드 스토리</a></li>
+          <li><a href="#">오프라인 스토어</a></li>
+        </ul>
+      </article>
+
+      <article class="site-map-box">
+        <p class="site-tit">고객 서비스</p>
+        <ul class="site-map-li">
+          <li><a href="#">개인정보취급방침</a></li>
+          <li><a href="#">이용약관</a></li>
+        </ul>
+      </article>
+
+      <article class="site-map-box">
+        <p class="site-tit">주문 및 지원</p>
+        <ul class="site-map-li">
+          <li><a href="#">주문조회</a></li>
+          <li><a href="#">Q&A</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </article>
+
+      <ul class="sns">
+        <li>
+          <a href="https://www.instagram.com/porter_kr/"><img src="./project2img/insta_icon.png" alt="인스타"></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/porteroficial" class="youtube"><img src="./project2img/youtube_icon.png"
+              alt="유튜브"></a>
+        </li>
+
+      </ul>
+    </div>
+
+
+    <ul class="address">
+      <li>
+        <p>(주)스타럭스 대표이사 : 김재일 사업자등록번호 : 120-86-24028 통신판매업등록번호 : 서울 강남 - 4364호<br>
+          본사 : 06155 서울시 강남구 삼성로 561 고객센터 02-540-1935 E-Mail : porter@starluxe.co.kr<br>개인정보보호책임자 : EC팀 정태준
+          팀장 tjjung@starluxe.co.kr</p>
+      </li>
+
+      <li>
+        <p>Copyright (c) 2022 YOSHIDA & CO., LTD. ALL RIGHTS RESERVED</p>
+      </li>
+    </ul>
+
+
+  </footer>
+
+
+  <!-- Swiper -->
+  <script>
+    const swiper1 = new Swiper(".mySwiper1", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+    });
+
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        390: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 40
+        }
+      }
+    });
+
+    // <!-- Initialize Swiper -->
+
+
+    var swiper3 = new Swiper(".mySwiper3", {
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    AOS.init();
+  </script>
+</body>
+
+</html>

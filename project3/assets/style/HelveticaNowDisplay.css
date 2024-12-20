@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'HelveticaNowDisplay-ExtLtIta';
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/Pretendard-ExtraLight.woff2') format('woff2-variations');
+}
+@font-face {
+	font-family: 'HelveticaNowDisplay-Light';
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/HelveticaNowDisplay-Light.woff2') format('woff2-variations');
+}
+@font-face {
+	font-family: 'HelveticaNowDisplay-Regular';
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/HelveticaNowDisplay-Regular.woff2') format('woff2-variations');
+}
+@font-face {
+	font-family: 'HelveticaNowDisplay-Medium';
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/HelveticaNowDisplay-Medium.woff2') format('woff2-variations');
+}

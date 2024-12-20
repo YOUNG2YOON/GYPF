@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'RedHatDisplay';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/RedHatDisplay-Black.woff2') format('woff2');
+}

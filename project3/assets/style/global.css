@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+@import url(./NotoSansKR.css);
+@import url(./HelveticaNowDisplay.css);
+
+
+:root {
+  --font-main-ko : "NotoSansKR", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+  --font-main-en-ExtLtIta: "HelveticaNowDisplay-ExtLtIta", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", Arial, sans-serif;
+
+  --font-main-en-Light: "HelveticaNowDisplay-Light", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", Arial, sans-serif;
+
+  --font-main-en-Regular: "HelveticaNowDisplay-Regular", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", Arial, sans-serif;
+
+  --font-main-en-Medium: "HelveticaNowDisplay-Medium", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", Arial, sans-serif;
+
+
+  
+
+
+
+  --size-28px: 1.75rem;
+  --size-30px: 1.875rem;
+  --size-36px: 2.25rem;
+  --size-50px: 3.125rem;
+  --size-36px: 2.25rem;
+  --size-160px: 10rem;
+  --size-240px: 15rem;
+  --size-785px: 49.063rem;
+
+  --ExtraLight: 200;
+  --Light: 300;
+  --Ragular: 400;
+  --Medium: 500;
+
+
+  --color-green: #00D344;
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+.site-txt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 8rem;
+  font-family: var(--font-main-en-Light);
+  padding: 0 190px;
+}
+.site-txt img {
+  width: 140px;
+  height: 140px;
+}
+
+/* .magazine-img {
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: center;
+} */
+.magazine-img {
+  overflow: hidden;
+  height: 600px;
+  background-color: #000;
+}
+.magazine-img img {
+  transition: 0.6s;
+}
+.magazine-img:hover img {
+  transform: scale(1.1);
+}

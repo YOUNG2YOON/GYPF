@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>project4</title>
+  <link rel="stylesheet" href="../assets/style/reset.css">
+  <link rel="stylesheet" href="../assets/style/common.css">
+  <link rel="stylesheet" href="../assets/style/layout.css">
+  <link rel="stylesheet" href="./project4.css">project4
+
+  <script src="../assets/scripts/lottie.min.js"></script>
+  <script src="../assets/scripts/jquery-3.7.1.min.js"></script>
+  <script src="./project4.js" defer></script>
+</head>
+
+<body>
+
+  <body>
+
+    <section class="sub-project">
+      <div class="sub-project-wrapper">
+        <h3 class="sub-project-title">매일유업<br>
+          MicroWeb Design</h3>
+        <p class="sub-project-dec">웹 리디자인 & 퍼블리싱</p>
+        <p class="sub-project-dec">개인 프로젝트</p>
+        </p>
+
+        <article class="home-btn flex">
+          <a href="../index.html" class="home-icon">home icon</a>
+          <a href="../index.html" class="home-text">home</a>
+        </article>
+      </div>
+    </section>
+
+
+
+    <!-- 본문 -->
+
+
+    <div class="project4-wrapper">
+
+      <main id="mainSection">
+        <img src="" alt="">
+      </main>
+
+
+      <ul class="main-btn">
+        <li><a href="./index.html" class="site-btn">View Site</a></li>
+      </ul>
+
+
+      <!-- 메인 이미지 -->
+      <div class="main-img-wrapper">
+        <img src="../images/mainImg.png" alt="mainImg" class="mainImg">
+      </div>
+
+
+
+
+      <!-- 작업일지 -->
+
+      <article class="situation">
+        <h2 class="timeline-title">Situation ❓</h2>
+        <ul class="situation-wrapper">
+          <li class="timeline-list">• 매일유업의 홍보용 모바일 마이크로웹 제작</li>
+        </ul>
+      </article>
+      
+
+
+      <article class="task">
+        <h2 class="timeline-title">Task 🚩</h2>
+        <ul class="task-wrapper">
+          <li class="timeline-list">• <strong>GSAP</strong>, javascript, jquery 를 활용하여 모바일 웹 제작하기</li>
+          <li class="timeline-list">• 모바일 웹인 점을 감안하여 효과들이 과하지 않으면서 보는 이의 흥미를 끌 것</li>
+          <li class="timeline-list">• 기업 사이트인만큼 너무 가벼운 느낌이 나지 않게 할 것</li>
+        </ul>
+      </article>
+
+
+      <article class="problem">
+        <h2 class="timeline-title">Problem 🔍</h2>
+        <ul class="problem-wrapper">
+          <li class="timeline-list"><strong>원페이지 모바일 웹사이트에서 재미있게 흐름을 유도하려면 어떻게 해야 하지?</strong> (이탈 방지)</li>
+          <li class="timeline-list">기업 홍보 사이트는 이용자가 <span style="text-decoration:underline;">지루하다</span>는 느낌을 받을 수 있어 제작 초기부터 효과를 적극적으로 사용해야 할 것을 염두에 두고 있었다. 또한 페이지 간의 이동이 없는 원페이지 웹사이트의 경우 <span style="text-decoration:underline;">세로 스크롤이 길기에</span> 이탈자가 발생할 것 같았다. 결과적으로 <strong style="text-decoration:underline;">ScrollTrigger</strong>로 <span style="text-decoration:underline;">화면이 고정되거나 스크롤을 내릴 때 실행되는 애니메이션</span>을 활용하여 지루함을 덜고, 재미를 느낄 수 있도록 작업했다.</li>
+        
+        </ul>
+      </article>
+
+
+      <article class="styleGuide">
+        <h2 class="timeline-title">StyleGuide 📄</h2>
+        <div class="styleGuide-wrapper">
+          <div class="keyword">
+            <h3>KEYWORD</h3>
+            <ul class="keyword-wrapper">
+              <li class="timeline-list"># </li>
+              <li class="timeline-list"># </li>
+              <li class="timeline-list"># </li>
+            </ul>
+          </div>
+
+          <div class="color">
+            <h3>COLOR</h3>
+            <ul class="color-wrapper">
+              <li class="timeline-list">WHITE</li>
+              <li class="timeline-list">#194E91</li>
+            </ul>
+            </ul>
+          </div>
+
+          <div class="font">
+            <h3>FONT</h3>
+            <ul class="font-wrapper">
+              <li class="timeline-list">Nanum<br>Sauare</li>
+              <li class="timeline-list">Nanum<br>SquareRound</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <article class="issueResolving">
+        <h2 class="timeline-title">Issue & Resolving 💣</h2>
+        <div class="issueResolving-wrapper">
+          <ul class="issueResolving-wrapper1">
+            <li class="timeline-list-lg">1. <strong>스크롤을 내릴 때</strong>, 이미지가 떠오르듯 <strong>Y스크롤 반대로 올라가는 효과</strong> 어떻게
+              구현할까?<button type="button" id="ex-btn">예시 사진 보기</button>
+            </li>
+            <li class="timeline-list">-> const로 이미지를 하나씩 상수 선언 후, <span>window.addEventListener() </span>메서드에
+              <span>scroll</span>을 입력한다.<br> 스크롤 할 때 이 동작(함수)이 실행된다는 의미이다.</li>
+            <li class="timeline-list">-> <span>window.scrollY</span>를 상수 선언한다. </li>
+            <li class="timeline-list">-> 앞서 선언한 이미지 상수 뒤에 .style.top (top에 style을 추가한다는 의미) 를 입력하고 스크롤Y을 내릴 때 올라갈 값을
+              입력해준다. * 위로 올라가려면 음수, 내려가려면 양수를 입력한다. </li>
+            <li class="timeline-list"><img src="./project4img/issue1.png" alt="issue2" class="issueImg"></li>
+          </ul>
+
+
+
+          <!-- 예시 모달창 -->
+          <div id="modalWrap"> <!-- 모달 창을 감싸는 div -->
+            <div id="modalBody">
+              <span id="closeBtn">&times;</span> <!-- 모달을 닫는 X 버튼 -->
+              <img src="./project4img/ex1.gif" alt="" 1> <!-- 모달 창 내용 -->
+            </div>
+          </div>
+
+
+
+          <ul class="issueResolving-wrapper2">
+            <li class="timeline-list-lg">2. <strong>스크롤을 내릴 때</strong> , 지나간 이미지는 <strong>어두워지는 애니메이션 효과</strong>는 어떻게
+              구현할까?<button type="button" id="ex-btn2">예시 사진 보기</button></li>
+            <li class="timeline-list"> * gsap 를 사용했다.</li>
+            <li class="timeline-list"> -> gsap 스크립트를 모두 연결해준뒤 <span>배열 메서드 toArry</span>와 <span>인덱스 실행 메서드
+                forEach</span>도 함께 작성한다. 배열 메서드에서 생성된 인덱스 번호를 차례대로 실행한다는 의미이다.</li>
+
+            <li class="timeline-list"> -> 연속적으로 애니메이션이 실행되어야 하기 때문에 <span>타임라인</span>을 생성하고 그것을 상수로 선언한다.</li>
+            <li class="timeline-list"> -> 이미지를 조금만 지나쳐도 어두워지는 효과가 적용되게끔 <span>start의 지점을 10%</span>로 설정했다.</li>
+            <li class="timeline-list"> -> 타임라인 스크롤 트리거 상수에 <span>fromTo 메서드</span>를 작성한다. 타임라인에 <span>타겟</span>(item)을
+              입력하고, <span>{시작 점}</span>과 <span>{끝나는 점}</span>에 적용할 효과를 작성한다. * 투명도를 낮춰 어두워 보이게 한다. </li>
+            <li class="timeline-list"> -> 10% 지점에서 opacity 1로 시작해서 bottom bottom 지점에서 opacty 0.3으로 끝난다는 의미이다.</li>
+            <li class="timeline-list"><img src="./project4img/issue3.png" alt="issue5" class="issueImg"></li>
+
+          </ul>
+
+          <!-- 예시 모달창2 -->
+          <div id="modalWrap2"> <!-- 모달 창을 감싸는 div -->
+            <div id="modalBody2">
+              <span id="closeBtn2">&times;</span> <!-- 모달을 닫는 X 버튼 -->
+              <img src="./project4img/ex2.gif" alt="" 1> <!-- 모달 창 내용 -->
+            </div>
+          </div>
+
+
+        </div>
+      </article>
+
+
+
+
+      <article class="review">
+        <h2 class="timeline-title">Review ✏️</h2>
+        <div class="review-wrapper">
+          <div class="regret-box">
+            <h3>😓 아쉬운 점</h3>
+            <ul class="regret-wrapper">
+              <li class="timeline-list">• 자바스크립트 명령어에 대한 이해가 부족하여 허비한 시간이 많았다.</li>
+              <li class="timeline-list">• 화면이 전환될 때 실행되는 애니메이션 효과가 다소 부자연스럽다.</li>
+              <li class="timeline-list">• 20년이라는 시간치고는 전개된 <strong>스토리가 부실</strong>했던 것 같다. 또한 분위기가 고조되며 임팩트가 있어야 할 구간이 부족하다고 느꼈다.</li>
+            </ul>
+          </div>
+
+          <div class="success-box">
+            <h3>👏 성과</h3>
+            <ul class="success-wrapper">
+              <li class="timeline-list">• 자바스크립트 명령어, 메서드에 대한 이해도 증가</li>
+              <li class="timeline-list">• <strong>GSAP</strong> 숙련도 증가</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+
+    </div>
+
+
+  </body>
+
+
+</body>
+
+</html>

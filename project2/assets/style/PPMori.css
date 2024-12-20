@@ -1,0 +1,15 @@
+
+@font-face {
+	font-family: 'PPMori-SemiBold';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/PPMori-SemiBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'PPMori-Regular';
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	src: url('../fonts/PPMori-Regular.woff2') format('woff2');
+}

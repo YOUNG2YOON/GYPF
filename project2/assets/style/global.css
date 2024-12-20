@@ -1,0 +1,165 @@
+@charset "utf-8";
+
+@import url(./Pretendard.css);
+
+:root {
+  --font-pretendard: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+  --weight-Light: 300;
+  --weight-Ragular: 400;
+  --weight-Medium: 500;
+  --weight-Semibold: 600;
+
+  --size-11px: 0.688rem;
+  --size-12px: 0.75rem;
+  --size-13px: 0.813rem;
+  --size-15px: 0.938rem;
+  --size-20px: 1.25rem;
+  --size-24px: 1.5rem;
+
+
+  /* pc */
+  --size-16px: 1rem;
+  --size-17px: 1.063rem;
+  --size-20px: 1.25rem;
+  --size-25px: 1.563rem;
+  --size-29px: 1.813rem;
+}
+
+body {
+  font-family: var(--font-pretendard);
+  margin: 0 auto;
+}
+
+.global-menu {}
+
+main {}
+
+.main-slide-title {
+  font-weight: var(--weight-Medium);
+  font-size: var(--size-20px);
+  width: 92%;
+  margin: 0 auto;
+  display: block;
+  margin-top: 55px;
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.text {}
+
+.title {
+  font-weight: var(--weight-Medium);
+  font-size: var(--size-24px);
+  width: 92%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.sub-title {
+  font-weight: var(--weight-Ragular);
+  font-size: var(--size-15px);
+
+  width: 92%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+
+.des {
+  font-weight: var(--weight-Light);
+  font-size: var(--size-15px);
+  width: 92%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 50px;
+  line-height: 25px;
+}
+.about-des {
+  font-weight: var(--weight-Light);
+  font-size: var(--size-15px);
+}
+
+.btn {
+  font-weight: var(--weight-Ragular);
+  font-size: var(--size-15px);
+  display: block;
+  width: 92%;
+  padding: 15px 0;
+  border: 1px solid #FE6B0C;
+  margin: 20px auto;
+  text-align: center;
+}
+.btn:hover {
+  background-color: #fe6d0c;
+  transition: 0.3s;
+}
+
+
+.site-tit {
+  font-weight: var(--weight-Semibold);
+  font-size: var(--size-13px);
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.site-map-li {
+  font-weight: var(--weight-Ragular);
+  font-size: var(--size-13px);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#icon {
+  text-indent: -999px;
+}
+
+section {
+  padding-bottom: 100px;
+}
+
+.content1-photo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin: 0 auto;
+}
+
+.site-map-li li {
+  padding-bottom: 20px;
+}
+
+.sns {
+  padding-top: 30px;
+}
+
+
+.menu-tit {
+  font-weight: bold;
+  font-size: var(--size-16px);
+}
+
+.transit {
+  transition: 0.3s;
+}
+.grid-wrapper {
+  display: grid;
+  align-content: center;
+}
+.flex-wrapper {
+  display: flex;
+  align-items: center;
+}
+main .mySwiper1 .swiper-wrapper .swiper-slide .btn:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.3s;
+ }
+ main .mySwiper1 .swiper-wrapper .swiper-slide .btn {
+  z-index: 999;
+ }
+

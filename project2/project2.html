@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project2</title>
+
+  <link rel="stylesheet" href="../assets/style/reset.css">
+  <link rel="stylesheet" href="../index.css">
+  <link rel="stylesheet" href="../assets/style/common.css">
+  <link rel="stylesheet" href="../assets/style/layout.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check" />
+  <link rel="stylesheet" href="../assets/style/Pretendard.css">
+  <link rel="stylesheet" href="../assets/style/PPMori.css">
+  <link rel="stylesheet" href="../project2/project2.css">
+
+  <script src="../assets/scripts/jquery-3.7.1.min.js"></script>
+  <script src="../assets/scripts/lottie.min.js"></script>
+  <script src="./project2.js" defer></script>
+
+</head>
+
+<body>
+
+  <section class="sub-project">
+    <div class="sub-project-wrapper">
+      <h3 class="sub-project-title">PORTER<br>
+        Web Design</h3>
+      <p class="sub-project-dec">반응형 웹 리디자인 & 퍼블리싱</p>
+      <p class="sub-project-dec">개인 프로젝트</p>
+      <p class="sub-project-dec">24.11.13 ~ 24.11.27
+      </p>
+
+      <article class="home-btn flex">
+        <a href="../index.html" class="home-icon">home icon</a>
+        <a href="../index.html" class="home-text">home</a>
+      </article>
+    </div>
+  </section>
+
+
+
+  <!-- 본문 -->
+
+
+  <div class="project2-wrapper">
+
+    <main id="mainSection">
+      <img src="./project2img/project_2.png" alt="main-img" class="main-img">
+    </main>
+
+
+    <ul class="main-btn">
+      <li><a href="./index.html" class="site-btn">View Site</a></li>
+    </ul>
+
+    <!-- 작업일지 -->
+
+    <article class="situation">
+      <h2 class="timeline-title">Situation ❓</h2>
+      <ul class="situation-wrapper">
+        <li class="timeline-list">• 단조로운 홈 화면, 부족한 컨텐츠, 비고정 헤더, 모바일 메뉴 사용성 미흡</li>
+      </ul>
+    </article>
+
+    <article class="task">
+      <h2 class="timeline-title">Task 🚩</h2>
+      <ul class="task-wrapper">
+        <li class="timeline-list">• 반응형 웹 구현, 슬라이드와 스크롤 애니메이션 적용으로 사용성 및 재미 강화</li>
+      </ul>
+    </article>
+
+    <article class="styleGuide">
+      <h2 class="timeline-title">StyleGuide 📄</h2>
+      <div class="styleGuide-wrapper">
+        <div class="keyword">
+          <h3>KEYWORD</h3>
+          <ul class="keyword-wrapper">
+            <li class="timeline-list"># 심플한</li>
+            <li class="timeline-list"># 현대적인</li>
+            <li class="timeline-list"># 통일적인</li>
+          </ul>
+        </div>
+
+        <div class="color">
+          <h3>COLOR</h3>
+          <ul class="color-wrapper">
+            <li class="timeline-list">BLACK</li>
+            <li class="timeline-list">WHITE</li>
+            <li class="timeline-list">#4A523E</li>
+            <li class="timeline-list">#FE6B0C</li>
+          </ul>
+          <ul class="color-wrapper2">
+            <li class="timeline-list">• 무채색으로 현대적인 느낌을 살리면서도 카키와 오렌지를 포인트 컬러로 사용하여 브랜드의 캐주얼한 느낌을 더했다.</li>
+          </ul>
+        </div>
+
+        <div class="font">
+          <h3>FONT</h3>
+          <ul class="font-wrapper">
+            <li class="timeline-list">Pretendard<br>Semibold</li>
+            <li class="timeline-list">Pretendard<br>Medium</li>
+            <li class="timeline-list">Pretendard<br>Regular</li>
+            <li class="timeline-list">Pretendard<br>Light</li>
+          </ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="issueResolving">
+      <h2 class="timeline-title">Issue & Resolving 💣</h2>
+      <div class="issueResolving-wrapper">
+        <ul class="issueResolving-wrapper1">
+          <li class="timeline-list-lg">1. 스크롤 효과로 <strong>헤더의 크기가 줄어들 때</strong>, <strong>hover-menu</strong> 의 위치도
+            <strong>함께 따라가려면</strong> 어떻게 해야 할까?<button type="button" id="ex-btn">예시 사진 보기</button>
+          </li>
+          <li class="timeline-list">-> hover-menu 에도 <span>헤더가 줄어든 만큼 같은 값을 addClass로 추가</span>하여 해결함.</li>
+          <li class="timeline-list"><img src="./project2img/issue2.png" alt="issue2"></li>
+          <li class="timeline-list"><img src="./project2img/issue6.png" alt="issue2"></li>
+        </ul>
+
+
+
+
+        <!-- 예시 모달창 -->
+        <div id="modalWrap"> <!-- 모달 창을 감싸는 div -->
+          <div id="modalBody">
+            <span id="closeBtn">&times;</span> <!-- 모달을 닫는 X 버튼 -->
+            <img src="./project2img/issue1.png" alt=""> <!-- 모달 창 내용 -->
+          </div>
+        </div>
+
+
+
+        <ul class="issueResolving-wrapper2">
+          <li class="timeline-list-lg">2. <strong>pc 크기</strong>일 때 이미지와 텍스트의 위치가 <strong>변경</strong>되는 슬라이드<button
+              type="button" id="ex-btn2">예시 사진 보기</button></li>
+          <li class="timeline-list">-> text 섹션과 슬라이드 섹션 2개로 나누어 grid 적용 후
+            order 값으로 위치를 변경함.</li>
+          <li class="timeline-list"><img src="./project2img/issue5.png" alt="issue5"></li>
+        </ul>
+
+
+
+        <!-- 예시 모달창2 -->
+        <div id="modalWrap2"> <!-- 모달 창을 감싸는 div -->
+          <div id="modalBody2">
+            <span id="closeBtn2">&times;</span> <!-- 모달을 닫는 X 버튼 -->
+            <img src="./project2img/issue7.png" alt="1"> <!-- 모달 창 내용 -->
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </article>
+
+    <article class="review">
+      <h2 class="timeline-title">Review ✏️</h2>
+      <div class="review-wrapper">
+        <div class="regret-box">
+          <h3>😓 아쉬운 점</h3>
+          <ul class="regret-wrapper">
+            <li class="timeline-list">• 기존 사이트 내에 있던 복잡한 하위 링크 구조를 단순화하려 했으나 시간 부족으로 홈 화면만 제작함.</li>
+            <li class="timeline-list">• 와이어 프레임과 실제 구현했을 때의 느낌이 달라 수정 시간이 늘어남.</li>
+            <li class="timeline-list">• 특정 문제를 해결하는 데 지나치게 많은 시간을 소비함.</li>
+            <li class="timeline-list">• html을 뒤늦게 수정하는 부분이 있었다.</li>
+          </ul>
+        </div>
+
+        <div class="success-box">
+          <h3>👏 성과</h3>
+          <ul class="success-wrapper">
+            <li class="timeline-list">• 모든 디바이스에서 자연스러운 반응형 웹 구현</li>
+            <li class="timeline-list">• 슬라이드 및 스크롤 효과로 콘텐츠 강조</li>
+          </ul>
+        </div>
+        <!-- 
+        <div class="learned-box">
+          <h3>✍️ 배운 점</h3>
+          <ul class="learned-wrapper">
+            <li class="timeline-list">• HTML 태그 활용법 및 효율적인 구조 설계 습득</li>
+            <li class="timeline-list">• AOS, Swiper 등 플러그인 수정 및 활용 능력 향상</li>
+            <li class="timeline-list">• Active와 Toggle 활용에 대한 이해도 개선</li>
+          </ul>
+        </div> -->
+
+        <p class="last-p">✔️ html 구조부터 css, 플러그인까지 혼자 구성하는 건 처음이라 시작이 막막했다. 구조 면에서 조금 체계적이지 못한 부분이 있었고, 속도도 더뎠지만 포기하지 않고
+          해냈기에 뿌듯함이 크다. 브랜드의 이미지를 살리기 위해 단순한 효과들만 적용했는데, 다음 프로젝트에는 더욱 화려한 효과들을 적용해보고 싶다.</p>
+      </div>
+    </article>
+
+
+  </div>
+
+
+</body>
+
+</html>

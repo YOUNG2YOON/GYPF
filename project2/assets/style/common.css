@@ -1,0 +1,414 @@
+@charset "utf-8";
+
+@import url(./Pretendard.css);
+@import url(./PPMori.css);
+@import url(./RedHatDisplay.css);
+@import url(./RubikScribble.css);
+
+:root {
+  --font-main-ko : "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-main-en: "PPMori-SemiBold", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", Arial, sans-serif;
+  --font-main-en-light: "PPMori-Regular", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", Arial, sans-serif;
+
+  --font-logo-scribble: "RubikScribble", sans-serif;
+  --font-logo-rubik: "RedHatDisplay", serif;
+
+  --font-main-title-lg: 6rem; /* Project 타이틀 96px */
+ --font-main-title-md: 2.25rem; /* View More 버튼, Contact 소개글, Contact 하위 카테고리 36px */
+  --font-main-title-sm : 2rem; /* Skill & Tools 타이틀, Contact 카테고리, 기록일지 32px */
+  --font-main-title-xsm: 1.5rem; /* 상위 메뉴, Project 설명 24px */
+  --font-main-title-xxsm: 1rem; /*  Skill & Tools 설명 16px  */
+
+
+
+  --font-main-title-lg: 3.438rem; /* Project 상세페이지 타이틀 55px */
+  --font-main-title-md: 2.25rem; /* Project 상세페이지 버튼 36px */
+  --font-sub-title-sm: 1.25rem; /* Project 상세페이지 설명 20px */
+
+  
+
+  --color-red: #E66926;
+  --color-white: #fff; 
+  --color-blue: #CFEBFF;
+ 
+
+  --border-radius-max: 50%;
+  --border-radius-lg: 37px;
+
+  --spacing-lg: -0.25rem; /* 큰 영어 타이틀 4px */
+  --spacing-md: -0.07rem; /* 작은 영어 타이틀 2px */
+  --spacing-sm: -0.0313rem; /* 한글 0.5px */
+
+  --padding-sm: 2.625rem;
+
+
+  /* 상세페이지 */
+
+  --font-main-ko2 : "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+
+  --size-4px: 0.25rem;
+  --size-6px: 0.375rem;
+  --size-7px: 0.438rem;
+  --size-8px: 0.5rem;
+  --size-9px: 0.563rem;
+  --size-10px: 0.625rem;
+  --size-11px: 0.688rem;
+  --size-13px: 0.813rem;
+  --size-14px: 0.875rem;
+  --size-18px: 1.125rem;
+  --size-20px: 1.25rem;
+  --size-24px: 1.5rem;
+  --size-29px: 1.813rem; /* 타이틀 크기 */
+
+  --weight-ExtraLight: 200;
+  --weight-Light: 300;
+  --weight-Ragular: 400;
+  --weight-Medium: 500;
+  --weight-Semibold: 600;
+  --weight-Bold: 700;
+  --weight-ExtraBold: 800;
+
+  --spacing: -0.25rem;
+
+  --color-yellow: #FFCE00;
+  --color-background: #2B2B2B;
+  --color-source: #8e8e8e;
+  --color-background2:#212121;
+  --color-gray: #323232;
+
+  --sub-page-margin: 0 0 0 400px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html ::selection {
+  background-color: var(--color-blue);
+  color: var(--color-red);
+}
+
+.global-menu {
+  font-family: var(--font-main-en);
+  font-size: var( --font-main-title-xsm);
+  text-transform: capitalize;
+  letter-spacing: var(--spacing-md);
+}
+
+.section-title {
+  font-family: var(--font-main-en);
+  font-size: var(--font-main-title-sm);
+  color: var(--color-white);
+  letter-spacing: var(--spacing-md);
+  padding: var(--padding-sm);
+  text-transform: capitalize;
+}
+
+.project-title {
+  font-family: var(--font-main-en);
+  font-size: var(--font-main-title-lg);
+  color: var(--color-red);
+  font-weight: bold;
+  letter-spacing: var(--spacing-lg);
+  position: relative;
+}
+.project_2 ::selection,
+.project_4 ::selection {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+
+
+.project-dec {
+  font-family: var( --font-main-ko);
+  font-size: var(--font-main-title-xsm);
+  color: var(--color-red);
+  letter-spacing: var(--spacing-md);
+  text-transform: capitalize;
+  line-height: 45px;
+  position: absolute;
+  top: 500px;
+}
+
+
+.skill-title {
+  font-family: var( --font-main-en);
+  font-size: var(--font-main-title-sm);
+  color: var(--color-red);
+  letter-spacing: var(--spacing-md);
+  text-transform: capitalize;
+}
+
+.skill-dec {
+  font-family: var( --font-main-ko);
+  font-size: var(--font-main-title-xxsm);
+  color: var(--color-red);
+  letter-spacing: var(--spacing-sm);
+  text-transform: capitalize;
+  width: 20vw;
+}
+
+.contact-title {
+  font-family: var( --font-main-en-light);
+  font-size: var(--font-main-title-sm);
+  color: var(--color-red);
+  letter-spacing: var(--spacing-md);
+  text-transform: capitalize;
+}
+
+.contact-dec {
+  font-family: var( --font-main-en);
+  font-size: var(--font-main-title-md);
+  color: var(--color-red);
+  letter-spacing: var(--spacing-md);
+  text-transform: capitalize;
+}
+
+.log {
+  font-family: var( --font-main-ko);
+  font-size: var(--font-main-title-sm);
+  color: var(--color-red);
+  letter-spacing: var(--spacing-sm);
+  text-transform: capitalize;
+}
+
+.btn-wrapper {
+  background-color: var(--color-red);
+  width: 100px; height: 100px;
+  border-radius: var(--border-radius-max);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: fixed;
+  top: 800px; right: 50px;
+  background-image: url(../../images/allow.png);
+  z-index: 999;
+}
+.top-btn {
+  display: block;
+  text-indent: -9999px;
+  width: 100px; height: 100px;
+}
+
+.viewMore-btn {
+  font-family: var(--font-main-en-light);
+  font-size: var(--font-main-title-md);
+  color: var(--color-white);
+  letter-spacing: var(--spacing-md);
+  display: flex;
+}
+
+.viewMore {
+  background-color: var(--color-red);
+  display: block;
+  width: 344.76px; height: 73px;
+  text-align: center;
+  line-height: 73px;
+  border-radius: var(--border-radius-lg);
+}
+.viewMore-allow {
+  background-color: var(--color-red);
+  width: 73px; height: 73px;
+  display: block;
+  text-indent: -9999px;
+  border-radius: var(--border-radius-lg);
+  background-image: url(../../images/allow2.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.block {
+  width: 410px; height: 410px;
+  border: 1px solid var(--color-red);
+  border-radius: var(--border-radius-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+  transition: 0.3s;
+}
+.block:hover {
+  background-color: var(--color-red);
+}
+.block:hover .skill-title,
+.block:hover .skill-dec {
+  color: var(--color-white);
+}
+
+
+
+.all-block {
+  display: grid;
+  grid-template-columns: repeat(3,410px);
+  justify-content: center;
+}
+
+.skill-dec {
+  margin-top: 50px;
+  line-height: 30px;
+}
+
+.dot {
+  background: url(../../images/Artboard\ 2.png);
+}
+
+
+
+.project_1 {
+  background-color: var(--color-white);
+}
+.project_2 {
+  background-color: var(--color-blue) ;
+}
+.project_3 {
+  background-color: var(--color-white);
+}
+.project_4 {
+  background-color: var(--color-blue) ;
+}
+
+.otherProject_1 {
+  background-color: var(--color-white);
+}
+
+
+
+.project_1,
+.project_2,
+.project_3,
+.project_4,
+.otherProject_1 {
+  position: relative;
+}
+
+.viewMore-btn {
+  position: absolute;
+  bottom: 42px;
+}
+
+.project-img {
+  width: 878.11px;
+  position: absolute;
+  bottom: 42px; right: 42px;
+  border-radius: 50px;
+}
+
+
+.project-1-title {
+  font-size: var(--size-29px);
+  font-weight: var(--weight-Bold);
+  word-spacing: var(--spacing-md);
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+
+.project-1-title-dec {
+  font-size: var(--size-18px);
+  font-weight: var(--weight-Ragular);
+  padding-left: 100px;
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+
+.source {
+  font-size: var(--size-11px);
+  font-weight: var(--weight-ExtraLight);
+  color: var(--color-source);
+  text-align: right;
+  display: block;
+  padding-right: 100px;
+}
+
+.material-symbols-outlined {
+  color: var(--color-yellow);
+  padding-right: 50px;
+}
+
+.mini-title {
+  width: 5vw;
+  display: block;
+}
+
+.prototype-sub-title {
+  text-transform: uppercase;
+  font-family: var(--font-main-en);
+  color: var(--color-yellow);
+  padding: 10px 0;
+}
+
+.prototype-title {
+  color: var(--color-background2);
+  font-size: 2.2rem;
+  font-weight: var(--weight-ExtraBold);
+  padding: 10px 0;
+}
+
+.prototype-dec {
+  color: var(--color-background2);
+  margin-top: 20px;
+  margin-bottom: 100px;
+  line-height: 25px;
+}
+
+.projectTimeline-btn {
+  display: block;
+  margin-top: 50px;
+  border-radius: 100px;
+  text-decoration: underline;
+}
+.timeline-title {
+  padding: 15px 0;
+  font-weight: 600;
+}
+.timeline-list {
+  padding: 10px 0;
+  line-height: 30px;
+  font-weight: 300;
+}
+.timeline span {
+  font-family: 'Pretendard';
+	font-weight: 500;
+}
+
+.timeline-list-title {
+  font-size: var(--size-20px);
+  font-weight: 600;
+}
+.timeline-list-title2 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.main-btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: fixed;
+  top: 50px;
+  right: 100px;
+  z-index: 999;
+}
+
+.site-btn {
+  font-size: 18px;
+  padding: 10px 50px;
+  display: block;
+  text-align: center;
+  color: #fff;
+  border-radius: 40px;
+  border: 1px var(--color-red) solid;
+  background-color: var(--color-red);
+  transition: 0.3s;
+}
+
+
+.site-btn.active {
+  backdrop-filter: blur(5px);
+  background-color: transparent;
+  color: var(--color-red);
+  transition: 0.3s; 
+}
+--font-main-title-lg: 3.438rem; /* Project 상세페이지 타이틀 55px */
+--font-main-title-md: 2.25rem; /* Project 상세페이지 타이틀 36px */
+--font-sub-title-sm: 1.25rem; /* Project 상세페이지 설명 20px */
